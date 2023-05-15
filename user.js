@@ -306,7 +306,7 @@ function RegisterUser() {
 //Logout User
 function LogOut(){
   firebase.auth().signOut().then(() => {
-    location.replace('login.html');
+    location.replace('index.html');
     
   }).catch((error) => {
     var errorCode = error.code;
