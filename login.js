@@ -17,7 +17,7 @@ function RegisterUser() {
 
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        window.location.assign("http://localhost:5500/welcome.html")
+        window.location.assign("https://vouchy.z5.web.core.windows.net/welcome.html")
 
     } else {
 
@@ -32,7 +32,7 @@ function LoginUser() {
 
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
         .then(() => {
-            window.location.assign("http://localhost:5500/welcome.html")
+            window.location.assign("https://vouchy.z5.web.core.windows.net/welcome.html")
 
         })
         .catch((error) => {
